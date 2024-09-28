@@ -22,6 +22,6 @@ new. Obviously design i did myslef.
 IMPORTANT:
 js code for registration and contact pages i did myself, as i once randomly found a short video 
 about usage of regular expresions (when was working through math topic, so i knew about this 
-technique long before course work and used in my lab 5 task 3 page))
+technique long before course work and used in my laboratory tasks))
 
 
