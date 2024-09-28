@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link to style sheet, scriopt, logo for tab and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="techcon2023.js "></script>
+    <title>Registration page</title>
+    <link rel="icon" href="techconlogo.png">
+</head>
+<!-- class blured is used to replace bvackground image with its blurred alternative, 
+    and not to brake the structure, i used separate image(edited in photoshop) -->
+<body class="blured"> 
+<header>
+    <!-- navigation bar, present on every page -->
+    <div class="navbar">
+        <img src="techconlogo.png" alt="logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="navulli"><a class="linkinnav" href="index.html">HOME</a></li>
+                <li class="navulli"><a class="linkinnavactive" href="registration.html">REGISTRATION</a></li>
+                <li class="navulli"><a class="linkinnav" href="schedule.html">SCHEDULE</a></li>
+                <li class="navulli"><a class="linkinnav" href="speakers.html">SPEAKERS</a></li>
+                <li class="navulli"><a class="linkinnav" href="cntact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- that is just a header just between the form and navbar -->
+<div style="margin-top: 110px;" class="mainpart">
+    <div><h1 class="headingverytop">Registration form</h1></div>
+
+    <!-- that is the form itslef -->
+<main>
+    <form id="myform" method="post">
+        <div class="block">
+            <br>
+            <!-- name input -->
+            <div>
+                <p for="name" class="aboveent">Enter your full name:</p>
+                <input type="text" id="nameinput" class="windows" placeholder="Micahel Jordan" name="Enter your name:" required><br>
+            </div>
+            <br>
+            <!-- date of birth input -->
+            <div>
+                <p for="age" class="aboveent">Enter your Date of birth:</p>
+                <input type="date" id="age" class="windows" placeholder="age" name="Enter your age" required>
+                <br>
+            </div>
+            <br>
+            <!-- email input -->
+            <div>
+                <p for="email" class="aboveent">Enter your e-mail address:</p>
+                <input type="email" id="email" name="email" required class="windows" placeholder="qwerty@gmail.com"><br>
+            </div>
+            <br>
+            <!-- postcode input -->
+            <div>
+                <p for="postcode" class="aboveent">Eneter your Postcode:</p>
+                <input type="text" id="postcode" name="postcode" required class="windows" placeholder="XX123XX"><br>
+            </div>
+            <br>    
+            <!-- phone number input -->
+            <div>
+                <p for="telephone" class="aboveent">Enter your phone number:</p>
+                <input type="tel" id="phone" required class="windows" placeholder="+44xx-xxxx-xxxx"><br>
+            </div>
+            <br>
+            <!-- reset submit and help buttons -->
+            <div style="margin-bottom: 20px;">
+                <button type="reset" id="resetbutt" class="button">Reset</button><br>
+                <button onclick="helpmeButton()" type="button" id="helpButton" class="button">Help</button> <br>
+                <button type="submit" id="butt" class="button" onclick="return validateForm()">Submit</button>
+            </div>
+        </div>
+    </form>
+</main>
+</div>
+</body>
+</html>

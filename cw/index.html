@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link to style sheet, scriopt, logo for tab and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="techcon2023.js"></script>
+    <title>Home page</title>
+    <link rel="icon" href="techconlogo.png">
+</head>
+<!-- background for body is used to create this zoom out effect (see details in techcon.js file) -->
+<body class="mainpage">
+<header>
+    <!-- navigation bar, present on every page -->
+    <div class="navbar">
+        <img src="techconlogo.png" alt="logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="navulli"><a class="linkinnavactive" href="index.html">HOME</a></li>
+                <li class="navulli"><a class="linkinnav" href="registration.html">REGISTRATION</a></li>
+                <li class="navulli"><a class="linkinnav" href="schedule.html">SCHEDULE</a></li>
+                <li class="navulli"><a class="linkinnav" href="speakers.html">SPEAKERS</a></li>
+                <li class="navulli"><a class="linkinnav" href="cntact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- main content of the pages -->
+<main id="main-content">
+    <!-- this is the Tech con in the middle of the home page -->
+    <div class="intro">
+        <h1 class="introtext">Tech-Con 2023</h1>
+        <p class="intropar"> - where innovation meets inspiration - </p>
+    </div>
+
+    <!-- that is part of the page with all the info/ text  -->
+    <div class="maintext">
+
+        <!-- that is paragraph with photo and some text -->
+        <div class="textnphoto fade-in">
+                <div class="textnophoto">
+                    <p class="woblehead"><b>Welcome to Techcon2023 -</b><br></p>
+                    <p class="woble">Get ready to embark on a journey into the future as we showcase cutting-edge technologies, 
+                        revolutionary ideas. It is not just an event; it's a celebration of innovation, a convergence of brilliant 
+                        minds pushing the boundaries of what's possible. Join us as we bring together industry leaders, visionaries, 
+                        and tech enthusiasts from around the globe to explore and discuss the latest advancements that are 
+                        transforming the way we live, work, and connect.</p>
+                </div>
+                <div class="photo">
+                    <img class="imagewoble" src="crowd.jpg">
+                </div>    
+        </div>
+        <br>
+        <!-- that is paragraph with link to registration page -->
+        <div class="justparagraph fade-in">
+                <p class="woblehead-1">Join Us in Shaping Tomorrow</p>
+                <p class="woble-1">Techcon2023 is more than just a conference; it's a platform for inspiration, collaboration, and the 
+                        exchange of ideas that will shape the future. Whether you're a tech enthusiast, industry professional, or simply 
+                        curious about the possibilities that lie ahead, Techcon2023 invites you to be a part of the conversation.</p>
+                <div class="DK"><a class="registrlink" href="registration.html">Register now</a></div>
+        </div>
+        <br>
+        <!-- tha is paragraph that gives some very brief info about ucoming events -->
+        <div class="justparagraph fade-in">
+            <p class="woblehead-1">What to expect on Tech-con 2023</p>
+            <p class="woble-1">Gear up for an extraordinary tech event! We're bringing in some exceptional personalities, experts, and 
+                innovators to share their insights. The program is packed with fascinating talks, hands-on workshops, and discussions 
+                that promise a great time for everyone. Curious about the schedule? It's easy to check, so you won't miss out on any 
+                of the special guest's speaches. Join us for an event where you can learn and experience the latest in tech!</p>
+            <div class="doublelink">
+                <div class="thrd-one"><a class="thirdlink-first" href="schedule.html">Schedule</a></div>
+                <div class="thrd-two"><a class="thirdlink-second" href="speakers.html">Speakers</a></div>
+            </div>
+            
+        </div>
+
+    </div>
+</main>
+</body> 
+<!-- footer is present only on home page, as it doesnt look goo on other pages -->
+<footer >
+    <div class="footor">
+        <div class="footertext textbit">
+            <h1>Contact details:</h1>
+            <ul>
+                <li style="font-size: 15px;">+447822222222</li>
+                <li style="font-size: 15px;">+447811111111</li>
+                <li style="font-size: 15px;"><a href="mailto:techcon2023@org.uk" style="color: antiquewhite; text-decoration: none;">techcon2023@org.uk</a></li>
+            </ul>
+        </div>
+        <div class="footertext photobit">
+            <a class="photofooter" href="https://le.ac.uk"><image class="photofooter" src="unilogo.jpg" style="height: 80px; border-radius: 10px;"></image></a>
+        </div>
+    </div>
+</footer>
+</html>

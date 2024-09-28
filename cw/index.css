@@ -1,0 +1,1012 @@
+
+
+
+/* BIT OF CODE DOWN BELOW IS A CSS FOR ITEMS PRESENT ON MAJORITY OF PAGES */
+
+
+/* css for all the pages, changes background form white to more pleasant dark grey */
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    min-width: 830px;
+    background: linear-gradient(90deg, rgba(12, 37, 41, 0.5) 0%, rgba(19,154,156,0.5) 100%),
+            url(BACk.jpg) no-repeat center center ;
+            background-size: 140%;
+            background-attachment: fixed;
+}
+.blured {
+    background: linear-gradient(90deg, rgba(12, 37, 41, 0.5) 0%, rgba(19,154,156,0.5) 100%),
+            url(Blured.jpg) no-repeat center center ;
+            background-size: 140%;
+            background-attachment: fixed;
+}
+
+/* super important css, which is present on every single page, 
+its a navigation bar and its components */
+header {
+    background: rgb(25,80,87);
+    background: linear-gradient(150deg, rgb(19, 59, 65) 0%, rgba(19,154,156,1) 100%);
+    border: #195057;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 830px;
+}
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+/* some cosmetic changes for logo and nav links */
+.logo {
+    float: left;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-left: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:0;
+}
+.nav {
+    float: right;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+    min-width: 830px
+}
+.nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navulli {
+    display: inline-block;  
+    margin: 0 35px;
+    padding-top: 20px;
+    margin: clamp(4px, 5vw, 10px);
+}
+.linkinnav {
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 10px 10px 10px;
+    border:3px;
+    border-color: #195057;
+    border-radius: 6px;
+    margin: auto;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    transition: 500ms;
+
+}
+.linkinnav:hover {
+    color: #195057;
+    padding: 10px 10px 10px 10px;
+    background-color: antiquewhite;
+    transition: 500ms;
+    border: 3px;
+    border-color: antiquewhite;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+.linkinnav:active {
+    color: #195057;
+    padding: 10px 10px 10px 10px;
+    background-color:#2fc0d3;
+    border: 3px;
+    border-color: #2fc0d3;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+/* changes style for link of the page we are currently in     */
+.linkinnavactive {
+    color: #195057;
+    padding: 10px 10px 10px 10px;
+    background-color: antiquewhite;
+    transition: 500ms;
+    border: 3px;
+    border-color: antiquewhite;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: auto;
+    float: left;
+}
+
+/* used on every page apart form index.html, creates this heading at the very top of the page*/
+.headingverytop {
+    padding: 40px;
+    font-size: 70px;
+    border-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0d7779;
+    color: antiquewhite;
+    min-width: 830px;
+    top:none;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME PAGE */
+
+/* this bit of code created a zoom in backgorund (see details in techcon2023.js file) and 
+also style for the Tech-Con 2023 text in the middle of the page */
+.mainpage {
+   background: linear-gradient(90deg, rgba(12, 37, 41, 0.5) 0%, rgba(19,154,156,0.5) 100%),
+            url(BACK.jpg) no-repeat center center ;
+            background-size: 140%; /* Initial zoom level */
+            background-attachment: fixed;
+            transition: background-size 0.3s ease-out;
+   
+}
+.intro {
+    margin-top: 45vh;
+    margin-bottom: 50vh;
+}
+.introtext {
+    color: antiquewhite ;
+    font-size: 100px;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
+.intropar {
+    color:antiquewhite;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+}
+
+.zoom-out {
+    transform: scale(1);
+  }
+
+
+
+/* important css, which makes a backgorund for paragraphs and sections  */
+.maintext {
+    background-color:#2a747e;
+    width: 100%;
+    padding-top: 40px;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+
+
+/* thart is css for the paragraph with photo and some general info */
+.textnphoto {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 20px;
+    padding: 10px;
+    background-color: #139a9c;
+    border: #139a9c;
+    border-width: 5px;
+    border-radius: 30px;
+    min-width: 790px;
+    width: 100;
+}
+.img {
+    max-width: 90%;
+    box-sizing: border-box;
+
+}
+
+/* css for text in the first section */
+  .woble {
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 20px;
+    text-align: left; 
+}
+.woblehead{
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 20px;
+    text-align: left;
+    border: #0f898b;
+    background-color: #0f898b;
+    border-width: 3px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Css for image in the first paragrah */
+.imagewoble {
+    max-width: 95%;
+    max-height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #0d7779;
+    border-width: 10px;
+    border-radius: 10px;
+    transform: 250ms;
+}
+
+.imagewoble:hover {
+    cursor: pointer;
+    scale: 105%;
+    transition: all 300ms ease-in-out;
+
+}
+
+
+/* That is css for second section with link to registration form, 
+also classes: justparagraph, woblehead-1, woble-1 may be used in 
+other places as they are jsut simpole structures and good presets */
+.justparagraph {
+    margin: 20px;
+    padding: 10px;
+    background-color: #139a9c;
+    border: #139a9c;
+    border-width: 5px;
+    border-radius: 30px;
+    min-width: 790px; 
+}
+
+
+/* css for text in second paragraph */
+.woble-1 {
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center; 
+}
+.woblehead-1 {
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    border: #0f898b;
+    background-color: #0f898b;
+    border-width: 3px;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+/* This is css for 'register now' link */
+.registrlink {
+    font-size: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 10px 10px 10px;
+    border:3px;
+    border-color: #195057;
+    border-radius: 12px;
+    margin: auto;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-color: #0d7779;
+    margin: 20px;
+    padding: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    transition: 500ms;
+
+}
+.registrlink:hover {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #195057;
+    transition: 500ms;
+    border: 3px;
+    border-color: antiquewhite;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.registrlink:active {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #1c7885;
+    border: 3px;
+    border-color: #1c7885;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* this right there is the class that gives style to the div that 
+contains link to registration page in the second paragraph of the home page main text */
+.DK {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* That is css for two links in the third paragraph */
+.doublelink {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3px;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.thrd-one {
+    justify-content: right;
+    text-align: right;
+}
+.thrd-two {
+    justify-content: left;
+    text-align: left;
+}
+
+
+/* schedule link (left one) */
+.thirdlink-first {
+    font-size: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 10px 10px 10px;
+    border:3px;
+    border-color: #195057;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-left-color: #139a9c;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-color: #0d7779;
+    margin: 20px;
+    padding: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 0px;
+    transition: 500ms;
+}
+.thirdlink-first:hover {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #195057;
+    transition: 500ms;
+    border: 3px;
+    border-color: antiquewhite;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.thirdlink-first:active {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #1c7885;
+    border: 3px;
+    border-color: #1c7885;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Link to speakers page (right one) */
+.thirdlink-second {
+    font-size: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 10px 10px 10px;
+    border:3px;
+    border-color: #195057;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-right-color: #0d7779;
+    margin: auto;   
+    padding-top: 15px;
+    padding-bottom: 12px;
+    background-color: #0d7779;
+    margin: 20px;
+    padding: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 0px;
+    transition: 500ms;
+}
+.thirdlink-second:hover {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #195057;
+    transition: 500ms;
+    border: 3px;
+    border-color: antiquewhite;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.thirdlink-second:active {
+    color: antiquewhite;
+    padding: 10px 10px 10px 10px;
+    padding: 70px;
+    background-color: #1c7885;
+    border: 3px;
+    border-color: #1c7885;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+/* FOOTER */
+.footor {
+    display: flex;
+    background-color: #2a747e ;
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    width: 100%;
+    min-width: 830px;
+    background: linear-gradient(50deg, rgb(19, 59, 65) 0%, rgba(19,154,156,1) 100%);
+}
+.footertext {
+    color: antiquewhite;
+    font-size: 10px;
+}
+.textbit {
+    margin-left: 30px;
+}
+.photobit {
+    width: 100%;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.photofooter:hover {
+    size: 110%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGISRATION */
+
+/* that is css for the form itself  */
+#myform {
+    min-width: 830px;
+    margin-left: 260px;
+    margin-right: 260px;
+    background-color: #2a747e;
+    border: #0d7779;
+    border-width: 4px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
+}
+.aboveent {
+    text-align: center;
+    width: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #195057;
+    border-color: #195057;
+    padding: 15px;
+    border-radius: 10px;
+    color: antiquewhite;
+    font-size: 30px;
+}
+/* style for input boxes */
+.windows {
+    align-items: center;
+    text-align: center;
+    width: 20%;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    background-color: #133e44;
+    border-color: #133e44;
+    padding: 5px;
+    border-radius: 10px;
+    height: 25px;
+    color: antiquewhite;
+    border-width: 4px;
+    outline: none;
+    transition: 500ms;
+    font-size: 25px;
+}
+.windows:hover {
+    transition: 500ms;
+    background-color: #0b272b;
+}
+.windows::placeholder {
+    color: grey;
+}
+/* style for buttons */
+.button {
+    height: 60px;
+    width: 20vh;
+    margin: 10px;
+    background-color: #0d7779 ;
+    border-radius: 10px ;
+    outline: none;
+    transition: 500ms;
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 10px;
+}
+.button:hover {
+    background-color: #195057;
+    transition: 500ms;
+    height: 60px;
+    width: 20vh;
+    margin: 10px;
+    border-radius: 10px ;
+    outline: none;
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 10px;
+}
+button:active {
+    background-color: #1c7885;
+    height: 60px;
+    width: 20vh;
+    margin: 10px;
+    border-radius: 10px ;
+    outline: none;
+    transition: 500ms;
+    color: antiquewhite;
+    font-size: 30px;
+    margin: 10px;
+}
+input {
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCHEDULE PAGE */
+
+.blockfortable {
+    min-width: 1300px;
+    margin-left: 180px;
+    margin-right: 180px;
+    background-color: #2a747e;
+    border: #0d7779;
+    border-width: 4px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+
+/* read text.me file */
+.table-sortable th {
+	cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+	content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+	content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+	margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+	background: rgba(0, 0, 0, 0.1);
+}
+.table-sortable {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.tthead {
+    background-color: #1c5a63;
+    transition: 500ms;
+    color: antiquewhite;
+    min-width: 270px;
+    height: 90px;
+    font-size: 40px;
+}
+.tthead:hover {
+    background-color: #16474e;
+    transition: 500ms;
+}
+.tthead:active {
+    background-color: #123b41;
+    
+}
+
+.ttbody {
+    background-color:#139a9c ;
+    color: antiquewhite;
+    text-align: left;
+    font-size: 40px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SPEAKER PAGE */
+
+
+/* that is style for popup that is not visible and it waits for user click inmput */
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #118183;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color:#fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    
+}
+/* that is style for popup (after user clicks on page) */
+.popup.active .overlay {
+    display: block;
+    backdrop-filter: blur(5px);
+    transition: all 300ms ease-in-out;
+}
+.popup.active .content {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+
+
+/* works same way as original one */
+.popup1 .overlay1{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+.popup1 .content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #118183;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.popup1.active .overlay1 {
+    display: block;
+    backdrop-filter: blur(5px);
+    transition: all 300ms ease-in-out;
+}
+.popup1.active .content1 {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.popup2 .overlay2{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+}
+.popup2 .content2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #118183;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.popup2.active .overlay2 {
+    display: block;
+    backdrop-filter: blur(5px);
+    transition: all 300ms ease-in-out;
+}
+.popup2.active .content2 {
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+
+/* contains clickable photos of speakers */
+.blockofspeakers {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-areas:
+    ". a a a .";
+    margin-top: 20px;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    min-width: 1100px;
+}
+.speakersphoto {
+    
+    text-align: center; 
+    justify-content: center; 
+}
+.speakersphoto {
+    
+    align-items: center;
+    transition: 300ms;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.speakersphoto:hover {
+    max-width: 310px;
+    transition: 300ms;
+    margin-top: -6px;
+}
+.speakersphoto:active {
+    max-width: 316px;
+    margin-top: -6px;
+    transition: 100ms;
+}
+.buttons {
+    transition: 300ms;
+    margin: 10px;
+    margin-top: 30px;
+    max-width: 300px;
+}
+.buttons:hover {
+    max-width: 310px;
+    transition: 300ms;
+    margin-top: 20px;
+}
+button:active {
+    max-width: 316px;
+    margin-top: -6px;
+    transition: 100ms;
+}
+
+/* style for text that is under photos of speakers */
+.textbelowspeaker {
+    min-width: 300px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #139a9c;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+.popuphead {
+    margin-top: -7px;
+    color: antiquewhite;
+    background-color: #133e44;
+    padding: 25px;
+    border-radius: 10px;
+}
+.popuptext {
+    color: antiquewhite;
+    font-size: 13.5px;
+    margin-top: -14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT PAGE */
+.windowforcomplaint {
+    text-align: left;
+    width: 20%;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+    background-color: #133e44;
+    border-color: #133e44;
+    padding: 5px;
+    border-radius: 10px;
+    height: 25px;
+    color: antiquewhite;
+    border-width: 4px;
+    outline: none;
+    transition: 500ms;
+    font-size: 25px;
+    height: 400px;
+    resize: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+

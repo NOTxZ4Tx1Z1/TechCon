@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link to style sheet, scriopt, logo for tab and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="techcon2023.js"></script>
+    <link rel="icon" href="techconlogo.png">
+</head>
+<!-- class blured is used to replace bvackground image with its blurred alternative, 
+    and not to brake the structure, i used separate image(edited in photoshop) -->
+<body class="blured">
+<header>
+    <!-- that is just a header just between the form and navbar -->
+    <div class="navbar">
+        <img src="techconlogo.png" alt="logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="navulli"><a class="linkinnav" href="index.html">HOME</a></li>
+                <li class="navulli"><a class="linkinnav" href="registration.html">REGISTRATION</a></li>
+                <li class="navulli"><a class="linkinnav" href="schedule.html">SCHEDULE</a></li>
+                <li class="navulli"><a class="linkinnavactive" href="speakers.html">SPEAKERS</a></li>
+                <li class="navulli"><a class="linkinnav" href="cntact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--  a header above main bit -->
+<div style="margin-top: 110px;" class="mainpart">
+    <div><h1 class="headingverytop">Speakers</h1></div>
+
+<main>
+    <!-- that is html structure for popups, they are invisible now and 
+        waiting for user to click on one of the photos to run function  -->
+        <div class="popup" id="popup-1">
+            <div class="overlay" onclick="togglePopup()"></div>
+            <div class="content" onclick="togglePopup()">
+                <h1 class="popuphead">Tim Cook</h1>
+                <p class="popuptext">As Apple's CEO since 2011, 
+                    Tim Cook has steered the company to unprecedented 
+                    growth and innovation. He led the successful launch 
+                    of flagship products like the iPhone X and Apple Watch, 
+                    addressing challenges with strategic acumen. Cook's 
+                    commitment to sustainability has set Apple as an industry 
+                    leader in environmental responsibility. His visionary 
+                    leadership and focus on social impact have been instrumental 
+                    in Apple's ongoing success.</p>
+            </div>
+        </div>
+        <div class="popup1" id="popup-11">
+            <div class="overlay1" onclick="togglePopup1()"></div>
+            <div class="content1" onclick="togglePopup1()">
+                <h1 class="popuphead">Satya Nadella</h1>
+                <p class="popuptext">Satya Nadella, Microsoft's CEO since 2014, 
+                    has steered a transformative journey. Under his guidance, 
+                    Microsoft's value surged, driven by innovations like Azure 
+                    in cloud computing. Nadella's inclusive leadership and strategic 
+                    acquisitions, including GitHub and LinkedIn, highlight his pivotal 
+                    role in Microsoft's resurgence as a technology powerhouse.</p>
+            </div>
+        </div>
+        <div class="popup2" id="popup-12">
+            <div class="overlay2" onclick="togglePopup2()"></div>
+            <div class="content2" onclick="togglePopup2()">
+                <h1 class="popuphead">Elon Mask</h1>
+                <p class="popuptext">
+                    Elon Musk, Tesla and SpaceX co-founder, revolutionized 
+                    electric vehicles and space travel. As CEO, he led Tesla's 
+                    market success, promoting sustainable transportation. Musk's 
+                    SpaceX achievements include reusable rockets and interplanetary 
+                    colonization plans. His ventures, Neuralink and The Boring 
+                    Company, reflect Musk's profound impact on technology and innovation.</p>
+            </div>
+        </div>
+<!-- that is structure tha tcontains photos of speakers, also those pictures are clickable, 
+    and run function that shows individual popup  -->
+<div class="blockofspeakers">
+    <div class="boxcheck">
+        <a class="buttons" onclick="togglePopup()"><img src="Time Cook button .jpg" class="speakersphoto"></a>
+    </div>
+        <div class="boxcheck">
+    <a class="buttons" onclick="togglePopup1()"><img src="Nadella Satya button.jpg" class="speakersphoto"></a>
+        </div>
+    <div class="boxcheck">
+        <a class="buttons" onclick="togglePopup2()"><img src="Elon mask button.jpg" class="speakersphoto"></a>
+    </div>
+</div>
+<div class="blockofspeakers">
+    <div class="boxcheck">
+        <p class="textbelowspeaker">Tim Cook</p>
+    </div>
+    <div class="boxcheck">
+        <p class="textbelowspeaker">Satya Nadella</p>
+    </div>
+    <div class="boxcheck">
+        <p class="textbelowspeaker">Elon Mask</p>
+    </div>
+</div>
+
+
+    <script src="popup.js"></script>
+</main>
+</div>
+</body>
+</html>

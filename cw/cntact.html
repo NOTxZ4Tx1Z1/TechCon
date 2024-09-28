@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- link to style sheet, scriopt, logo for tab and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Contact page</title>
+    <link rel="icon" href="techconlogo.png">
+</head>
+<!-- class blured is used to replace bvackground image with its blurred alternative, 
+    and not to brake the structure, i used separate image(edited in photoshop) -->
+<body class="blured">
+<header>
+    <!-- that is just a header just between the form and navbar -->
+    <div class="navbar">
+        <img src="techconlogo.png" alt="logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="navulli"><a class="linkinnav" href="index.html">HOME</a></li>
+                <li class="navulli"><a class="linkinnav" href="registration.html">REGISTRATION</a></li>
+                <li class="navulli"><a class="linkinnav" href="schedule.html">SCHEDULE</a></li>
+                <li class="navulli"><a class="linkinnav" href="speakers.html">SPEAKERS</a></li>
+                <li class="navulli"><a class="linkinnavactive" href="cntact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div style="margin-top: 110px;" class="mainpart">
+    <div><h1 class="headingverytop">Contact us</h1></div>
+</div>
+<main>
+    <form id="myform" method="post">
+        <div class="block">
+            <br>
+            <!-- name input -->
+            <div>
+                <p for="name" class="aboveent">Enter your full name:</p>
+                <input type="text" id="nameinput" class="windows" placeholder="Micahel Jordan" name="Enter your name:" required><br>
+            </div>
+            <br>
+            <!-- email input -->
+            <div>
+                <p for="email" class="aboveent">Enter your e-mail address:</p>
+                <input type="email" id="email" name="email" required class="windows" placeholder="qwerty@gmail.com"><br>
+            </div>
+            <!-- complaint input -->
+            <div>
+                <p for="complaint" class="aboveent">Describe your problem:</p>
+                <textarea id="complaints" type="textarea" class="windowforcomplaint" required placeholder="Describe your problem right there:"></textarea>
+            </div>
+            <br>
+            <!-- reset submit  buttons -->
+            <div style="margin-bottom: 20px;">
+                <button type="reset" id="resetbutt" class="button">Reset</button><br>
+                <button type="submit" id="butt" class="button" onclick="return validateForm()">Submit</button><br>
+            </div>
+        </div>
+        <!-- that is script for contact form -->
+        <script src="Contact form.js"></script>
+    </form>
+
+</main>
+</body>
+</html>

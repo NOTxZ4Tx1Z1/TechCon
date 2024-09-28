@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- link to style sheet, scriopt, logo for tab and title of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="techcon2023.js"></script>
+	<title>Schedule page</title>
+	<link rel="icon" href="techconlogo.png">
+</head>
+<!-- class blured is used to replace bvackground image with its blurred alternative, 
+    and not to brake the structure, i used separate image(edited in photoshop) -->
+<body class="blured">
+<header>
+	<!-- navigation bar, present on every page -->
+    <div class="navbar">
+        <img src="techconlogo.png" alt="logo" class="logo">
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="navulli"><a class="linkinnav" href="index.html">HOME</a></li>
+                <li class="navulli"><a class="linkinnav" href="registration.html">REGISTRATION</a></li>
+                <li class="navulli"><a class="linkinnavactive" href="schedule.html">SCHEDULE</a></li>
+                <li class="navulli"><a class="linkinnav" href="speakers.html">SPEAKERS</a></li>
+                <li class="navulli"><a class="linkinnav" href="cntact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- that is just a header just between the form and navbar -->
+<div style="margin-top: 110px;" class="mainpart">
+    <div><h1 class="headingverytop">Schedule</h1></div>
+</div>
+<!-- that is main part of the page that contains shedule table -->
+<main class="blockfortable">
+<table class="table-sortable">
+	<thead>
+		<tr>
+			<th class="tthead">Event</th>
+			<th class="tthead">Date</th>
+			<th class="tthead">Speaker</th>
+			<th class="tthead">Duration</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="ttbody leftone">"Timeless Marketing"</td>
+			<td class="ttbody">23/11/2023</td>
+			<td class="ttbody">Tim Cook</td>
+			<td class="ttbody">12:00-15:00</td>
+		</tr>
+		<tr>
+			<td class="ttbody">"Corporate Mastery"</td>
+			<td class="ttbody">23/11/2023</td>
+			<td class="ttbody">Satya Nadella</td>
+			<td class="ttbody">16:00-19:00</td>
+		</tr>
+		<tr>
+			<td class="ttbody">"Aesthetic Harmony"</td>
+			<td class="ttbody">24/11/2023</td>
+			<td class="ttbody">Tim Cook</td>
+			<td class="ttbody">12:00-15:00</td>
+		</tr>
+		<tr>
+			<td class="ttbody">"Beyond Horizons"</td>
+			<td class="ttbody">24/11/2023</td>
+			<td class="ttbody">Elon Mask</td>
+			<td class="ttbody">16:00-19:00</td>
+		</tr>
+		<tr>
+			<td class="ttbody">"Worlds Ahead"</td>
+			<td class="ttbody">25/11/2023</td>
+			<td class="ttbody">Elon Mask</td>
+			<td class="ttbody">12:00-15:00</td>
+		</tr>
+		<tr>
+			<td class="ttbody">"Poised Marketing"</td>
+			<td class="ttbody">25/11/2023</td>
+			<td class="ttbody">Satya Nadella</td>
+			<td class="ttbody">16:00-19:00</td>
+		</tr>
+	</tbody>
+</table>
+<script src="tablesort.js"></script>
+</main>
+</body>
+</html>
